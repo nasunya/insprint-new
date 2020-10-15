@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <title>insprint</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="hero hero--center">
+      <div class="container">
+        <header class="header">
+          <div href="works__item" class="header__logo">
+            <a href="#" class="logo">
+              <img src="assets/img/logo.svg" alt="insprint logo" class="logo__icon" />
+            </a>
+          </div>
+          <button class="burger__btn" aria-label="Main Menu">
+            <svg width="40" height="40" viewBox="0 0 100 100">
+              <path class="burger__line burger__top"
+                d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="burger__line burger__middle" d="M 20,50 H 80" />
+              <path class="burger__line burger__bottom"
+                d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+          </button>
+          <div class="header__menu">
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Как это работает?</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Фотографы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Цены</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Доставка и оплата</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <a class="search">
+            <div class="search__icon">
+            </div>
+            <span> Отследить заказ</span>
+          </a>
+        </header>
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1>
+              Просто напечатать работу <br />
+              вашего любимого фотографа
+            </h1>
+            <p>
+              Печатайте и получайте фотографии ваших любимых <br />
+              фотографов прямо в руки
+            </p>
+          </div>
+          <div class="hero__button">
+            <button class="button--blue">Каталог фотографов</button>
+            <button>Как мы работаем</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__picture">
+        <div class="hero__wrap--flex">
+          <div>
+            <img src="assets/img/five.jpg" alt="picture" />
+          </div>
+          <div>
+            <img src="assets/img/two.jpg" alt="picture" />
+            <img src="assets/img/three.jpg" alt="picture" />
+          </div>
+          <div>
+            <img src="assets/img/four.jpg" alt="picture" />
+          </div>
+        </div>
+        <div class="hero__wrap--flex">
+          <div>
+            <img src="assets/img/five.jpg" alt="picture" />
+          </div>
+          <div>
+            <img src="assets/img/six.jpg" alt="picture" />
+            <img src="assets/img/seven.jpg" alt="picture" />
+          </div>
+          <div>
+            <img src="assets/img/eight.jpg" alt="picture" />
+          </div>
+          <div>
+            <img src="assets/img/five.jpg" alt="picture" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section works">
+      <div class="container works__container">
+        <div class="title">Как это работает?</div>
+        <div class="tab-container">
+          <div class="tab-wrapper">
+            <input type="radio" name="tab" id="tab1" checked />
+            <label class="tab-label" for="tab1" nth="1">Для фотолюбителей</label>
+            <div class="tab-item" id="tab-content1">
+              <ul class="works__list">
+                <li class="works__item">
+                  <span>1. Выбираете фото</span>
+                  <p>У нас большой выбор фотографови и их прекрасных фотографий</p>
+                </li>
+                <li class="works__item">
+                  <span>2. Оплачиваете</span>
+                  <p>Также у нас куча способов как это оплатить</p>
+                </li>
+                <li class="works__item">
+                  <span> 3. Получаете заказ </span>
+                  <p>Уже через 2 дня распечатанные фото окажутся у вас в руках</p>
+                </li>
+              </ul>
+            </div>
+
+            <input type="radio" name="tab" id="tab2" />
+            <label class="tab-label" for="tab2" nth="2">Для фотографов</label>
+            <div class="tab-item" id="tab-content2">
+              <ul class="works__list">
+                <li class="works__item">
+                  <span>1. Выбираете заказ</span>
+                  <p>У нас большой выбор заказов</p>
+                </li>
+                <li class="works__item">
+                  <span>2. Ждете предоплату</span>
+                  <p>Мы не работаем бесплатно</p>
+                </li>
+                <li class="works__item">
+                  <span> 3. Выполняете заказ </span>
+                  <p>Договариваетесь с клиентом об условиях</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="works__video">
+          <video src="assets/img/video.mp4" controls type="video/mp4" loop muted class="works__video-play"
+            poster="assets/img/bg-video.jpg"></video>
+          <div class="works__play-btn">
+            <img src="assets/img/play.svg" alt="works__item" />
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section reviews">
+      <div class="container reviews__container">
+        <div class="title">Отзывы</div>
+        <div class="reviews__desc">
+          Для нашей компании самое важное – это <br />
+          общечеловеческие ценности и высокий уровень сервиса
+        </div>
+        <div class="reviews__people">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__block">
+                <span> Спасибо большое за помощь и содействие!</span>
+              </div>
+              <div class="reviews__name">
+                <div class="reviews__img">
+                  <img src="assets/img/people.png" alt="works__item" />
+                </div>
+                <div class="reviews__name-people">
+                  <span>Александра Селезнева</span>
+                  <p>фотограф</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__block">
+                <span>
+                  Работа с сервисом приносит радость, потому что высочайший
+                  профессионализм, удобство, оперативность,и просто приятные
+                  люди!</span>
+              </div>
+              <div class="reviews__name">
+                <div class="reviews__img">
+                  <img src="assets/img/peopletwo.png" alt="works__item" />
+                </div>
+                <div class="reviews__name-people">
+                  <span>Лиза Семяновская</span>
+                  <p>фотограф</p>
+                </div>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__block">
+                <span>Это супер крутая инструкция и вы делаете очень полезную
+                  вещь 🙂 Спасибо ❤️</span>
+              </div>
+              <div class="reviews__name">
+                <div class="reviews__img">
+                  <img src="assets/img/peoplethre.png" alt="works__item" />
+                </div>
+                <div class="reviews__name-people">
+                  <span>Юрий Ставничий</span>
+                  <p>фотограф</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="photo__bg">
+      <div class="photo__bg-pic">
+        <img src="assets/img/sectionbg.jpg" alt="works__item" class="photo__bg-img">
+      </div>
+    </section>
+    <section class="section advant">
+      <div class="container">
+        <div class="title title--white">Преимущества</div>
+        <div class="advant__desc">
+          <div class="advant__left advant__col">
+            <div class="advant__name">
+              <p>
+                Защита <br />
+                лицензионным <br />
+                соглашением
+              </p>
+              <a href="works__item">Узнать больше</a>
+            </div>
+          </div>
+          <div class="advant__right advant__col">
+            <div class="advant__name">
+              <img src="assets/img/group.png" alt="works__item" />
+              <p>
+                Быстрая <br />и качественная<br />
+                печать
+              </p>
+              <a href="works__item">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section photo">
+      <div class="container photo__container">
+        <div class="title">5000 фотографов уже с нами</div>
+        <div class="photo__wrap">
+          <span href="#" class="photo__arrow-prew photo__arrow" id="left">
+          </span>
+          <div class="photo__desc">
+            <ul class="photo__list" id="items">
+              <li class="photo__item">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-one">
+                    <div style="background: url(assets/img/sheet.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/deesh.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/child.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/people.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Александра Селезнева</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-two">
+                    <div style="background: url(assets/img/comp.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/arch.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/town.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/boy.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Виктор Кострицкий</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item ">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-three">
+                    <div style="background: url(assets/img/car.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/bas.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/sea.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/peoplethre.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Юрий Ставничий</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-one">
+                    <div style="background: url(assets/img/sheet.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/deesh.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/child.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/people.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Александра Селезнева</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-two">
+                    <div style="background: url(assets/img/comp.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/arch.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/town.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/boy.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Виктор Кострицкий</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item ">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-three">
+                    <div style="background: url(assets/img/car.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/bas.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/sea.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/peoplethre.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Юрий Ставничий</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-one">
+                    <div style="background: url(assets/img/sheet.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/deesh.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/child.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/people.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Александра Селезнева</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-two">
+                    <div style="background: url(assets/img/comp.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/arch.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/town.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/boy.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Виктор Кострицкий</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+              <li class="photo__item ">
+                <div class="photo__item-wrap">
+                  <div class="photo__item-three">
+                    <div style="background: url(assets/img/car.jpg) center center / cover no-repeat;"></div>
+                    <div>
+                      <div style="background: url(assets/img/bas.jpg) center center / cover no-repeat;"></div>
+                      <div style="background: url(assets/img/sea.jpg) center center / cover no-repeat;"></div>
+                    </div>
+                  </div>
+                  <div class="photo__name">
+                    <div class="photo__pic">
+                      <img src="assets/img/peoplethre.png" alt="works__item" class="photo__picture">
+                    </div>
+                    <span> Юрий Ставничий</span>
+                    <p>130 фотографий</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <span href="#" class="photo__arrow-next  photo__arrow" id="right">
+          </span>
+        </div>
+      </div>
+    </section>
+    <section class="form">
+      <form class="form__left" id="myForm">
+        <div class="title title--form">Хочешь у нас разместиться?</div>
+        <label for="works__item" class="form__email">
+          <input type="email" placeholder="Ваша почта" id="txtEmail" name="email" required>
+          <div class="form__error"></div>
+        </label>
+        <div class="form__button">
+          <button id="send">Хочу разместиться</button>
+        </div>
+        <div class="form__desc">
+          Нажимая на кнопку, вы соглашаетесь с условиями обработки
+          <a>персональных данных</a>
+        </div>
+      </form>
+      <div class="form__right"></div>
+    </section>
+    <section class="section answer">
+      <div class="answer__container">
+        <div class="title">Вопросы и ответы</div>
+      </div>
+      <ul class="answer__acco-list">
+        <li class="answer__acco-item">
+          <span class="answer__acco-question">
+            <span class="answer__acco-title">Как это работает?</span>
+          </span>
+          <div class="answer__acco-info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates asperiores, accusantium
+              pariatur in quidem fugit nemo mollitia possimus facilis ullam ipsum animi sint neque,
+              laudantium vitae doloremque consequuntur aut voluptate?
+            </p>
+          </div>
+        </li>
+        <li class="answer__acco-item">
+          <span class="answer__acco-question">
+            <span class="answer__acco-title">Можно ли изменить условия?</span>
+          </span>
+          <div class="answer__acco-info">
+            <p>Нет. Из-за низкой стоимости работ нельзя поменять договор или отдельные условия сервиса.
+            </p>
+          </div>
+        </li>
+        <li class="answer__acco-item">
+          <span class="answer__acco-question">
+            <span class="answer__acco-title">Сколько мне заплатят за фотографии?</span>
+          </span>
+          <div class="answer__acco-info">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, officiis magnam eum a nostrum ex
+              autem
+              fuga quis aspernatur soluta, sapiente fugiat voluptatem quam vitae iusto incidunt esse, animi sequi.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__col">
+          <p class="footer__logo">
+            © 2020 insprint
+          </p>
+        </div>
+        <div class="footer__col footer__menu">
+          <nav class="nav footer__menu">
+            <ul class="footer__nav nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">Как это работает?</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Фотографы</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Цены</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Доставка и оплата</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__col footer__contact">
+          <a href="mailto:info@insprint.com " class="contact__mail">info@insprint.com </a>
+          <a class="contact__tel" href="tel: +7 (916) 857 89 78">+7 (916) 857 89 78</a>
+        </div>
+        <div class="footer__col footer__col--flex">
+          <div class="socials">
+            <a class="socials__link" href="works__item">
+              <svg class="socials__link-item" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 0C8.74 0 8.333 0.015 7.053 0.072C5.775 0.132 4.905 0.333 4.14 0.63C3.351 0.936 2.681 1.347 2.014 2.014C1.347 2.681 0.935 3.35 0.63 4.14C0.333 4.905 0.131 5.775 0.072 7.053C0.012 8.333 0 8.74 0 12C0 15.26 0.015 15.667 0.072 16.947C0.132 18.224 0.333 19.095 0.63 19.86C0.936 20.648 1.347 21.319 2.014 21.986C2.681 22.652 3.35 23.065 4.14 23.37C4.906 23.666 5.776 23.869 7.053 23.928C8.333 23.988 8.74 24 12 24C15.26 24 15.667 23.985 16.947 23.928C18.224 23.868 19.095 23.666 19.86 23.37C20.648 23.064 21.319 22.652 21.986 21.986C22.652 21.319 23.065 20.651 23.37 19.86C23.666 19.095 23.869 18.224 23.928 16.947C23.988 15.667 24 15.26 24 12C24 8.74 23.985 8.333 23.928 7.053C23.868 5.776 23.666 4.904 23.37 4.14C23.064 3.351 22.652 2.681 21.986 2.014C21.319 1.347 20.651 0.935 19.86 0.63C19.095 0.333 18.224 0.131 16.947 0.072C15.667 0.012 15.26 0 12 0ZM12 2.16C15.203 2.16 15.585 2.176 16.85 2.231C18.02 2.286 18.655 2.48 19.077 2.646C19.639 2.863 20.037 3.123 20.459 3.542C20.878 3.962 21.138 4.361 21.355 4.923C21.519 5.345 21.715 5.98 21.768 7.15C21.825 8.416 21.838 8.796 21.838 12C21.838 15.204 21.823 15.585 21.764 16.85C21.703 18.02 21.508 18.655 21.343 19.077C21.119 19.639 20.864 20.037 20.444 20.459C20.025 20.878 19.62 21.138 19.064 21.355C18.644 21.519 17.999 21.715 16.829 21.768C15.555 21.825 15.18 21.838 11.97 21.838C8.759 21.838 8.384 21.823 7.111 21.764C5.94 21.703 5.295 21.508 4.875 21.343C4.306 21.119 3.915 20.864 3.496 20.444C3.075 20.025 2.806 19.62 2.596 19.064C2.431 18.644 2.237 17.999 2.176 16.829C2.131 15.569 2.115 15.18 2.115 11.985C2.115 8.789 2.131 8.399 2.176 7.124C2.237 5.954 2.431 5.31 2.596 4.89C2.806 4.32 3.075 3.93 3.496 3.509C3.915 3.09 4.306 2.82 4.875 2.611C5.295 2.445 5.926 2.25 7.096 2.19C8.371 2.145 8.746 2.13 11.955 2.13L12 2.16ZM12 5.838C8.595 5.838 5.838 8.598 5.838 12C5.838 15.405 8.598 18.162 12 18.162C15.405 18.162 18.162 15.402 18.162 12C18.162 8.595 15.402 5.838 12 5.838ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16ZM19.846 5.595C19.846 6.39 19.2 7.035 18.406 7.035C17.611 7.035 16.966 6.389 16.966 5.595C16.966 4.801 17.612 4.156 18.406 4.156C19.199 4.155 19.846 4.801 19.846 5.595Z" />
+              </svg>
+            </a>
+            <a class="socials__link" href="works__item">
+              <svg class="socials__link-item" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z" />
+              </svg>
+            </a>
+            <a class="socials__link" href="works__item">
+              <svg class="socials__link-item" width="24" height="15" viewBox="0 0 24 15" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.057 14.3021H20.4367C19.4451 14.3021 19.1386 13.5133 17.3566 11.7073C15.8046 10.2048 15.1179 10.002 14.7363 10.002C14.2014 10.002 14.0482 10.1552 14.0482 10.893V13.2594C14.0482 13.8964 13.8453 14.278 12.1656 14.278C9.39198 14.278 6.3119 12.5983 4.14984 9.46711C0.892471 4.88756 0 1.45139 0 0.739218C0 0.357589 0.153253 0.00150237 0.890969 0.00150237H3.51129C4.17238 0.00150237 4.4278 0.306505 4.68322 1.01868C5.97986 4.75985 8.14342 8.04276 9.03439 8.04276C9.36494 8.04276 9.51819 7.88951 9.51819 7.05113V3.18074C9.41602 1.39881 8.47397 1.24706 8.47397 0.611508C8.47397 0.305002 8.72939 0 9.13506 0H13.2579C13.8183 0 14.0211 0.305002 14.0211 0.966092V6.1842C14.0211 6.74312 14.2765 6.94745 14.4283 6.94745C14.7588 6.94745 15.0398 6.74312 15.6498 6.13311C17.5339 4.02063 18.8816 0.763259 18.8816 0.763259C19.0604 0.38163 19.3654 0.0255417 20.028 0.0255417H22.6483C23.4371 0.0255417 23.6159 0.431211 23.4371 0.991635C23.1066 2.51965 19.9003 7.04812 19.9003 7.04812C19.6208 7.50638 19.5187 7.70921 19.9003 8.22005C20.1798 8.60168 21.0963 9.39048 21.7078 10.1027C22.8271 11.3753 23.6911 12.4435 23.9209 13.1827C24.1764 13.919 23.7932 14.3006 23.0555 14.3006L23.057 14.3021Z" />
+              </svg>
+            </a>
+            <a class="socials__link href=" works__item">
+              <svg class=" socials__link-item" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M23.954 2.56909C23.069 2.95809 22.124 3.22309 21.129 3.34409C22.143 2.73309 22.923 1.77009 23.292 0.621094C22.341 1.17609 21.287 1.58009 20.165 1.80509C19.269 0.846094 17.992 0.246094 16.574 0.246094C13.857 0.246094 11.654 2.44909 11.654 5.16309C11.654 5.55309 11.699 5.92809 11.781 6.28709C7.691 6.09409 4.066 4.13009 1.64 1.16109C1.213 1.88309 0.974 2.72209 0.974 3.63609C0.974 5.34609 1.844 6.84909 3.162 7.73209C2.355 7.70609 1.596 7.48409 0.934 7.11609V7.17709C0.934 9.56209 2.627 11.5511 4.88 12.0041C4.467 12.1151 4.031 12.1751 3.584 12.1751C3.27 12.1751 2.969 12.1451 2.668 12.0891C3.299 14.0421 5.113 15.4661 7.272 15.5061C5.592 16.8251 3.463 17.6111 1.17 17.6111C0.78 17.6111 0.391 17.5881 0 17.5441C2.189 18.9381 4.768 19.7531 7.557 19.7531C16.611 19.7531 21.556 12.2571 21.556 5.76709C21.556 5.55809 21.556 5.34709 21.541 5.13709C22.502 4.44809 23.341 3.57709 24.001 2.58909L23.954 2.56909Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="burger__menu">
+    <div class="burger__logo ">
+      <a href="#" class="logo">
+        <img src="assets/img/logo.svg" alt="insprint logo" class="logo__icon" />
+      </a>
+    </div>
+    <div class="nav burger__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="search__burger">
+            <div class="search__icon">
+            </div>
+            <span> Отследить заказ</span>
+          </a>
+        </li>
+        <li class="nav__item burger__item">
+          <a href="#" class="nav__link">Как это работает?</a>
+        </li>
+        <li class="nav__item burger__item">
+          <a href="#" class="nav__link">Фотографы</a>
+        </li>
+        <li class="nav__item burger__item">
+          <a href="#" class="nav__link">Цены</a>
+        </li>
+        <li class="nav__item burger__item">
+          <a href="#" class="nav__link">Доставка и оплата</a>
+        </li>
+      </ul>
+      <div class="socials social__burger">
+        <a class="socials__link socials__link-burger" href="works__item">
+          <svg class="socials__link-item" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 0C8.74 0 8.333 0.015 7.053 0.072C5.775 0.132 4.905 0.333 4.14 0.63C3.351 0.936 2.681 1.347 2.014 2.014C1.347 2.681 0.935 3.35 0.63 4.14C0.333 4.905 0.131 5.775 0.072 7.053C0.012 8.333 0 8.74 0 12C0 15.26 0.015 15.667 0.072 16.947C0.132 18.224 0.333 19.095 0.63 19.86C0.936 20.648 1.347 21.319 2.014 21.986C2.681 22.652 3.35 23.065 4.14 23.37C4.906 23.666 5.776 23.869 7.053 23.928C8.333 23.988 8.74 24 12 24C15.26 24 15.667 23.985 16.947 23.928C18.224 23.868 19.095 23.666 19.86 23.37C20.648 23.064 21.319 22.652 21.986 21.986C22.652 21.319 23.065 20.651 23.37 19.86C23.666 19.095 23.869 18.224 23.928 16.947C23.988 15.667 24 15.26 24 12C24 8.74 23.985 8.333 23.928 7.053C23.868 5.776 23.666 4.904 23.37 4.14C23.064 3.351 22.652 2.681 21.986 2.014C21.319 1.347 20.651 0.935 19.86 0.63C19.095 0.333 18.224 0.131 16.947 0.072C15.667 0.012 15.26 0 12 0ZM12 2.16C15.203 2.16 15.585 2.176 16.85 2.231C18.02 2.286 18.655 2.48 19.077 2.646C19.639 2.863 20.037 3.123 20.459 3.542C20.878 3.962 21.138 4.361 21.355 4.923C21.519 5.345 21.715 5.98 21.768 7.15C21.825 8.416 21.838 8.796 21.838 12C21.838 15.204 21.823 15.585 21.764 16.85C21.703 18.02 21.508 18.655 21.343 19.077C21.119 19.639 20.864 20.037 20.444 20.459C20.025 20.878 19.62 21.138 19.064 21.355C18.644 21.519 17.999 21.715 16.829 21.768C15.555 21.825 15.18 21.838 11.97 21.838C8.759 21.838 8.384 21.823 7.111 21.764C5.94 21.703 5.295 21.508 4.875 21.343C4.306 21.119 3.915 20.864 3.496 20.444C3.075 20.025 2.806 19.62 2.596 19.064C2.431 18.644 2.237 17.999 2.176 16.829C2.131 15.569 2.115 15.18 2.115 11.985C2.115 8.789 2.131 8.399 2.176 7.124C2.237 5.954 2.431 5.31 2.596 4.89C2.806 4.32 3.075 3.93 3.496 3.509C3.915 3.09 4.306 2.82 4.875 2.611C5.295 2.445 5.926 2.25 7.096 2.19C8.371 2.145 8.746 2.13 11.955 2.13L12 2.16ZM12 5.838C8.595 5.838 5.838 8.598 5.838 12C5.838 15.405 8.598 18.162 12 18.162C15.405 18.162 18.162 15.402 18.162 12C18.162 8.595 15.402 5.838 12 5.838ZM12 16C9.79 16 8 14.21 8 12C8 9.79 9.79 8 12 8C14.21 8 16 9.79 16 12C16 14.21 14.21 16 12 16ZM19.846 5.595C19.846 6.39 19.2 7.035 18.406 7.035C17.611 7.035 16.966 6.389 16.966 5.595C16.966 4.801 17.612 4.156 18.406 4.156C19.199 4.155 19.846 4.801 19.846 5.595Z" />
+          </svg>
+        </a>
+        <a class="socials__link  socials__link-burger" href="works__item">
+          <svg class="socials__link-item" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.9981 11.9991C23.9981 5.37216 18.626 0 11.9991 0C5.37216 0 0 5.37216 0 11.9991C0 17.9882 4.38789 22.9522 10.1242 23.8524V15.4676H7.07758V11.9991H10.1242V9.35553C10.1242 6.34826 11.9156 4.68714 14.6564 4.68714C15.9692 4.68714 17.3424 4.92149 17.3424 4.92149V7.87439H15.8294C14.3388 7.87439 13.8739 8.79933 13.8739 9.74824V11.9991H17.2018L16.6698 15.4676H13.8739V23.8524C19.6103 22.9522 23.9981 17.9882 23.9981 11.9991Z" />
+          </svg>
+        </a>
+        <a class="socials__link  socials__link-burger" href="works__item">
+          <svg class="socials__link-item" width="24" height="15" viewBox="0 0 24 15" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.057 14.3021H20.4367C19.4451 14.3021 19.1386 13.5133 17.3566 11.7073C15.8046 10.2048 15.1179 10.002 14.7363 10.002C14.2014 10.002 14.0482 10.1552 14.0482 10.893V13.2594C14.0482 13.8964 13.8453 14.278 12.1656 14.278C9.39198 14.278 6.3119 12.5983 4.14984 9.46711C0.892471 4.88756 0 1.45139 0 0.739218C0 0.357589 0.153253 0.00150237 0.890969 0.00150237H3.51129C4.17238 0.00150237 4.4278 0.306505 4.68322 1.01868C5.97986 4.75985 8.14342 8.04276 9.03439 8.04276C9.36494 8.04276 9.51819 7.88951 9.51819 7.05113V3.18074C9.41602 1.39881 8.47397 1.24706 8.47397 0.611508C8.47397 0.305002 8.72939 0 9.13506 0H13.2579C13.8183 0 14.0211 0.305002 14.0211 0.966092V6.1842C14.0211 6.74312 14.2765 6.94745 14.4283 6.94745C14.7588 6.94745 15.0398 6.74312 15.6498 6.13311C17.5339 4.02063 18.8816 0.763259 18.8816 0.763259C19.0604 0.38163 19.3654 0.0255417 20.028 0.0255417H22.6483C23.4371 0.0255417 23.6159 0.431211 23.4371 0.991635C23.1066 2.51965 19.9003 7.04812 19.9003 7.04812C19.6208 7.50638 19.5187 7.70921 19.9003 8.22005C20.1798 8.60168 21.0963 9.39048 21.7078 10.1027C22.8271 11.3753 23.6911 12.4435 23.9209 13.1827C24.1764 13.919 23.7932 14.3006 23.0555 14.3006L23.057 14.3021Z" />
+          </svg>
+        </a>
+        <a class="socials__link  socials__link-burger" href="works__item">
+          <svg class="socials__link-item" width="24" height="20" viewBox="0 0 24 20" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M23.954 2.56909C23.069 2.95809 22.124 3.22309 21.129 3.34409C22.143 2.73309 22.923 1.77009 23.292 0.621094C22.341 1.17609 21.287 1.58009 20.165 1.80509C19.269 0.846094 17.992 0.246094 16.574 0.246094C13.857 0.246094 11.654 2.44909 11.654 5.16309C11.654 5.55309 11.699 5.92809 11.781 6.28709C7.691 6.09409 4.066 4.13009 1.64 1.16109C1.213 1.88309 0.974 2.72209 0.974 3.63609C0.974 5.34609 1.844 6.84909 3.162 7.73209C2.355 7.70609 1.596 7.48409 0.934 7.11609V7.17709C0.934 9.56209 2.627 11.5511 4.88 12.0041C4.467 12.1151 4.031 12.1751 3.584 12.1751C3.27 12.1751 2.969 12.1451 2.668 12.0891C3.299 14.0421 5.113 15.4661 7.272 15.5061C5.592 16.8251 3.463 17.6111 1.17 17.6111C0.78 17.6111 0.391 17.5881 0 17.5441C2.189 18.9381 4.768 19.7531 7.557 19.7531C16.611 19.7531 21.556 12.2571 21.556 5.76709C21.556 5.55809 21.556 5.34709 21.541 5.13709C22.502 4.44809 23.341 3.57709 24.001 2.58909L23.954 2.56909Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/post.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

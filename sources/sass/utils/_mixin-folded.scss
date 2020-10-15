@@ -1,0 +1,106 @@
+// if you are not using compass, you will ned this
+@mixin box-sizing($box-type){
+   -webkit-border-box: $box-type;
+		-moz-border-box: $box-type;
+		  	 border-box: $box-type;
+}
+
+// the main part
+// tl == top-left | tr == top-right | br == bottom-right | bl == bottom-left
+@mixin folded-corner($position, $dimension, $cornercol, $bgcol) {
+  &{
+	background-color: $bgcol;
+	position: relative;
+	}
+    &:after{
+    	content: "";
+	    position: absolute;
+	    height:$dimension;
+	    display: block;
+	    background: $bgcol;
+	    @include box-sizing(border-box);
+	    width: 100%;
+    }
+	&:before {
+	    content: "";
+	    position: absolute;
+	    width: 0px;
+	    height: 0px;
+	}
+	
+	@if $position == tl {
+		& {
+		  border-left: $dimension solid $bgcol;
+		}
+		&:after {
+			top: -$dimension;
+			right: 0;
+			margin-left: $dimension;
+		}
+		
+		&:before {
+		  	top: -$dimension;
+		  	left: -$dimension;
+		  	border-bottom: $dimension solid $cornercol; 
+		  	border-left: $dimension solid transparent;			
+		}
+
+		
+	} @else if $position == tr {
+		& {
+		  border-right: $dimension solid $bgcol;
+		}
+
+		&:after {
+			top: -$dimension;
+			left: 0;
+			margin-right: $dimension;
+		}
+		
+		&:before {
+		  	top: -$dimension;
+		  	right: -$dimension;
+		  	border-bottom: $dimension solid $cornercol; 
+		  	border-right: $dimension solid transparent;			
+		}
+
+		
+	} @else if $position == br {
+		& {
+		  border-right: $dimension solid $bgcol;
+		}
+
+		&:after {
+			bottom: -$dimension;
+			left: 0;
+			margin-right: $dimension;
+		}
+		
+		&:before {
+		  	bottom: -$dimension;
+		  	right: -$dimension;
+		  	border-top: $dimension solid $cornercol; 
+		  	border-right: $dimension solid transparent;			
+		}
+		
+	} @else if $position == bl {
+		& {
+		  border-left: $dimension solid $bgcol;
+		}
+
+		&:after {
+			bottom: -$dimension;
+			right: 0;
+			margin-left: $dimension;
+		}
+		
+		&:before {
+		  	bottom: -$dimension;
+		  	left: -$dimension;
+		  	border-top: $dimension solid $cornercol; 
+		  	border-left: $dimension solid transparent;			
+		}
+		
+	}
+	
+}

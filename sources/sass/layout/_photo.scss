@@ -1,0 +1,220 @@
+.photo {
+
+  &__wrap {
+    position: relative;
+  }
+
+  &__container {
+    max-width: 1136px;
+  }
+
+  &__desc {
+    margin-top: 64px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    display: flex;
+    transition: right 0.3s;
+    will-change: right;
+    position: relative;
+    margin-bottom: 20px;
+    margin-right: -44px;
+
+    @include phones {
+      margin-right: -24px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  &__item-wrap {
+    margin-right: 30px;
+    box-shadow: $box;
+    border-radius: 16px;
+  }
+
+
+  &__name {
+    padding: 32px;
+    position: relative;
+
+    @include tablets {
+      min-height: 149px;
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 24px;
+      font-family: 'gilroy-semibold';
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 18px;
+      color: $black-light;
+    }
+  }
+
+  &__item-one {
+    display: flex;
+
+    :nth-child(1) {
+      height: 240px;
+      max-width: 240px;
+      width: 100%;
+      border-top-left-radius: 16px;
+    }
+
+    :nth-child(2) :nth-child(1) {
+      height: 120px;
+      max-width: 100%;
+      width: 118px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 16px;
+
+    }
+
+    :nth-child(2) :nth-child(2) {
+      height: 120px;
+      max-width: 100%;
+      width: 118px;
+    }
+  }
+
+  &__item-two {
+    display: flex;
+
+
+    :nth-child(1) {
+      height: 240px;
+      max-width: 240px;
+      width: 100%;
+      border-top-left-radius: 16px;
+    }
+
+    :nth-child(2) :nth-child(1) {
+      height: 120px;
+      max-width: 100%;
+      width: 118px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 16px;
+    }
+
+    :nth-child(2) :nth-child(2) {
+      height: 120px;
+      max-width: 100%;
+      width: 118px;
+    }
+  }
+
+  &__item-three {
+    display: flex;
+
+    :nth-child(1) {
+      height: 240px;
+      max-width: 240px;
+      width: 100%;
+      border-top-left-radius: 16px;
+    }
+
+    :nth-child(2) :nth-child(1) {
+      height: 120px;
+      max-width: 100%;
+      width: 118px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 16px;
+    }
+
+    :nth-child(2) :nth-child(2) {
+      height: 120px;
+      max-width: 100%;
+      max-width: 118px;
+    }
+  }
+
+  &__pic {
+    position: absolute;
+    top: -63px;
+
+    img {
+      width: 80px;
+      border: 3px solid $white;
+      border-radius: 100%;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  &__arrow {
+    width: 64px;
+    height: 64px;
+    background-color: $white;
+    border-radius: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    &:hover {
+      width: 68px;
+      height: 68px;
+      transition: all 0.3s;
+    }
+  }
+
+  &__arrow-prew {
+    left: -15px;
+    top: 43%;
+    box-shadow: -3px 2px 16px rgba(0, 0, 0, 0.08);
+
+    @include phones {
+      top: 40%;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid $extra;
+      border-right: 2px solid $extra;
+      transform: rotate(-135deg);
+      border-radius: 1px;
+      margin-left: 6px;
+    }
+  }
+
+  &__arrow-next {
+    right: -15px;
+    top: 43%;
+    box-shadow: 3px 2px 16px $box;
+
+
+    @include phones {
+      top: 40%;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 14px;
+      border-top: 2px solid $extra;
+      border-right: 2px solid $extra;
+      transform: rotate(45deg);
+      border-radius: 1px;
+      margin-right: 6px;
+    }
+  }
+}

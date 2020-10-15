@@ -1,0 +1,100 @@
+.title--form {
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+
+  @include tablets {
+    flex-direction: column;
+  }
+
+  &__left {
+    width: 50%;
+    padding: 120px 159px 120px 150px;
+    background-color: $beige;
+
+    @include big-tablets {
+      padding: 60px 89px 60px 80px;
+    }
+
+    @include tablets {
+      width: 100%;
+      padding: 60px 89px 60px 80px;
+    }
+  }
+
+  &__right {
+    width: 50%;
+    background: url(../img/photographer.jpg) center center / cover no-repeat;
+
+    @include tablets {
+      width: 100%;
+      min-height: 400px;
+    }
+  }
+
+  &__button {
+    button {
+      border-radius: 8px;
+      cursor: pointer;
+      background: $extra;
+      width: 100%;
+      padding: 20px 28px;
+      color: $white;
+      margin-bottom: 24px;
+
+      &:hover {
+        background: $white;
+        color: $extra;
+        box-shadow: $box;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &__email {
+    input {
+      width: 100%;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+      border: 2px solid $grey-light;
+      font-size: 18px;
+      font-family: $f_family;
+    }
+  }
+
+  &__desc {
+    a {
+      color: $extra;
+      cursor: pointer;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+
+  &__error {
+    margin-bottom: 20px;
+    color: red;
+
+  }
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+select,
+textarea {
+  outline-color: $extra !important;
+}
+
+#txtEmail:focus {
+  outline: none;
+  border: 2px solid $extra;
+
+}

@@ -1,0 +1,120 @@
+// Base
+$browser-context: 16; // Default
+
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    position: relative;
+    min-height: 100%;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0;
+    font-family: 'gilroy-regular';
+
+}
+
+
+
+a {
+    @include transition (all 0.3s linear);
+    outline: none;
+    color: $black-light;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+select,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1136px;
+
+    @include big-tablets {
+        padding: 0px 30px;
+    }
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    font-family: 'gilroy-semibold';
+
+    @include tablets {
+        font-size: 40px;
+    }
+
+    @include phones {
+        font-size: 30px;
+    }
+}
+
+.section {
+    padding: 120px 0px;
+
+    @include tablets {
+        padding: 80px 0px;
+    }
+}

@@ -1,0 +1,149 @@
+.footer {
+  display: flex;
+  width: 100%;
+  background: $white-light;
+  padding: 120px 0px;
+
+  @include tablets {
+    padding: 30px 0px;
+  }
+
+  .container {
+    display: flex;
+
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      color: $extra;
+      font-weight: 600;
+      font-size: 18px;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+  &__col {
+    width: 25%;
+
+    @include big-tablets {
+      width: 20%;
+      margin-right: 15px;
+
+      &:nth-child(4) {
+        margin-right: 0px;
+      }
+
+    }
+
+    @include tablets {
+      width: 100%;
+      margin-bottom: 20px;
+
+      &:nth-child(4) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__col--flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    @include big-tablets {
+      justify-content: center;
+    }
+
+    @include tablets {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__nav .nav__item {
+    margin-bottom: 16px;
+  }
+
+  &__logo {
+    font-weight: 500;
+    font-size: 18px;
+    color: $grey;
+  }
+
+  &__menu {
+    @include tablets {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__menu.nav {
+    @include tablets {
+      display: none;
+    }
+  }
+}
+
+.contact__mail {
+  margin-bottom: 16px;
+
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+
+  &:nth-child(4) {
+    margin-right: 0px;
+  }
+
+  &__link:before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    background-color: $white;
+    display: inline-block;
+    border-radius: 100%;
+
+    &:hover {
+      background-color: $extra;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+
+    svg {
+      position: absolute;
+    }
+  }
+
+  &__link-item {
+    fill: $extra;
+
+    &:hover {
+      fill: $black;
+
+    }
+  }
+}

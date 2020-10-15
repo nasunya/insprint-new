@@ -1,0 +1,15 @@
+// Convert px to em
+@function pxtoem($target, $context){
+    @return ($target/$context)+0em;
+}
+
+// Convert em to px
+@function emtopx($target, $context){
+    @return ($target*$context)+0px;
+}
+
+// Convert px to vw
+@function vw($target, $context) {
+    $vw-context: ($context*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}

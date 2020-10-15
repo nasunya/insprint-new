@@ -1,0 +1,49 @@
+//Vars
+$f_base: "Roboto",
+sans-serif;
+$f_family: "gilroy-regular";
+
+//Breakpoint
+$big-tablets: 1100px;
+$tablets: 890px;
+$phones : 480px;
+$small-phones : 375px;
+
+@mixin big-tablets {
+  @media (max-width: $big-tablets) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media (max-width: $phones) {
+    @content;
+  }
+
+}
+
+@mixin small-phones {
+  @media (max-width: $small-phones) {
+    @content;
+  }
+
+}
+
+//Colors
+$extra: #496adc;
+$white: #fff;
+$beige: #fff8ee;
+$white-light: #fafafb;
+$beige-yellow: #fad192;
+$grey-light: rgba(0, 0, 0, 0.08);
+$black: #000;
+$grey: rgba(0, 0, 0, 0.4);
+$box: 0px 2px 16px rgba(0, 0, 0, 0.08);
+$black-light: rgba(0, 0, 0, 0.6);
+$text: #666666;

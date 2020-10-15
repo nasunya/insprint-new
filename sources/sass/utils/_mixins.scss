@@ -1,0 +1,146 @@
+//
+// Mixins
+// --------------------------------------------------
+
+// Clearfix
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Text overflow
+@mixin text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+//  Placeholder
+@mixin placeholder($color : $clr-mixin-placeholder) {
+	&::-webkit-input-placeholder {
+		color: $color;
+	}
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+	}
+}
+
+@mixin resetul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: inherit;
+    line-height: inherit;
+}
+@mixin pseudo {
+    position: absolute;
+    content: '';
+}
+@mixin bg($path) {
+    background: url($path) no-repeat;
+}
+@mixin backface {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility:    hidden;
+    -ms-backface-visibility:     hidden;
+    backface-visibility:     hidden;
+}
+
+@mixin resetbtn {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+@mixin bcover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin fullBlock {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin reseta {
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin resetli {
+    padding-left: 0;
+
+    &:before {
+        content: normal;
+    }
+}
+
+@mixin down($size: 1) {
+    border-right: #{$size}px solid;
+    border-bottom: #{$size}px solid;
+    transform: rotate(45deg);
+    @include transition;
+}
+@mixin up($size: 1) {
+    border-right: #{$size}px solid;
+    border-bottom: #{$size}px solid;
+    transform: rotate(225deg);
+    @include transition;
+}
+@mixin right($size: 1) {
+    border-right: #{$size}px solid;
+    border-bottom: #{$size}px solid;
+    transform: rotate(-45deg);
+    @include transition;
+}
+@mixin left($size: 1) {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    transform: rotate(135deg);
+    @include transition;
+}
+@mixin close($color, $height, $width) {
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: $width;
+        top: 50%;
+        left: 25%;
+        margin-top: -1px;
+        height: $height;
+        background: $color;
+    }
+    &::before {
+        transform: rotate(45deg);
+    }
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

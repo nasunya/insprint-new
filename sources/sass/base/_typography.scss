@@ -1,0 +1,81 @@
+// //Typography
+// %h1 {
+// 	font-size: 30px;
+// 	font-weight: 500;
+// 	line-height: 1.3;
+// }
+
+// %h2 {
+// 	font-size: 24px;
+// 	font-weight: 400;
+// 	line-height: 1.3;
+// }
+
+// %h3 {
+// 	font-size: 24px;
+// 	font-weight: bold;
+// 	line-height: 1.3;
+// 	text-transform: uppercase;
+// }
+
+// h1, .h1 {
+// 	@extend %h1;
+// 	margin: 7px 0 20px;
+// }
+
+// h2, .h2 {
+// 	@extend %h2;
+// 	margin: 0 0 20px;
+// }
+
+// //Text
+// %p-base {
+// 	font-size: 14px;
+// 	font-weight: 500;
+// 	line-height: em(18,14);
+// }
+
+// p {
+// 	@extend %p-base;
+// 	margin: 1.5em 0;
+// }
+
+// //Lists
+// ul {
+// 	padding-left: 0;
+// 	margin: 1.3em 0 1.3em 15px;
+
+// 	li {
+// 		@extend %p-base;
+// 	}
+// }
+
+// //table
+// table {
+// 	width: 100%;
+// 	border-collapse: collapse;
+
+// 	td {
+// 		background: #fff;
+// 		@extend %p-base;
+// 		padding: 8px 39px;
+// 		border: 2px solid $greyDark;
+
+// 		&:first-child {
+// 			background: $greyLight;
+// 		}
+
+// 		&:last-child {
+// 			text-align: center;
+// 		}
+// 	}
+
+// 	th {
+// 		background: #fff;
+// 		@extend %p-base;
+// 		font-weight: bold;
+// 		padding: 11px 39px;
+// 		border: 2px solid $greyDark;
+// 		text-align: left;
+// 	}
+// }
